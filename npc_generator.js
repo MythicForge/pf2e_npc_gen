@@ -555,7 +555,7 @@ document
 // Function to load the JSON data
 async function loadNPCData() {
   try {
-    const response = await fetch("npc_data.json"); // This is where the fetch call goes
+    const response = await fetch('./npc_data.json'); // This is where the fetch call goes
     const npcData = await response.json();
     console.log("NPC Data Loaded:", npcData); // This logs the data to ensure it's loaded correctly
     return npcData;
@@ -595,7 +595,7 @@ async function initializeGenerator() {
     window.cleric_atfoptions = npcData.cleric_atfoptions;
     window.occultist_atfoptions = npcData.occultist_atfoptions;
     window.paladin_atfoptions = npcData.paladin_atfoptions;
-    window.pugalist_atfoptions = npcData.pugalist_atfoptions;
+    window.pugilist_atfoptions = npcData.pugilist_atfoptions;
     window.shaman_atfoptions = npcData.shaman_atfoptions;
     window.soldier_atfoptions = npcData.soldier_atfoptions;
     window.sorcerer_atfoptions = npcData.sorcerer_atfoptions;
